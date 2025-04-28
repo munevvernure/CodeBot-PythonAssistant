@@ -28,28 +28,28 @@ The goal is to demonstrate a simple AI-assisted development workflow through a c
 ## 🚀 Local Development Setup
 
 Follow these steps to set up and run the application locally:
-1. Clone the Repository
+### 1. Clone the Repository
 
 git clone https://github.com/munevvernure/CodeBot-PythonAssistant.git
 
 cd CodeBot-PythonAssistant
 
-2. Create and Activate a Virtual Environment
+### 2. Create and Activate a Virtual Environment
 
 python3 -m venv venv
 source venv/bin/activate       # For Linux/macOS
 
-3. Install Dependencies
+### 3. Install Dependencies
 
 pip install -r requirements.txt
 
-4. Configure Environment Variables
+### 4. Configure Environment Variables
 
 Create a .env file in the project root and add your OpenAI API Key:
 
 OPENAI_API_KEY=your_openai_api_key_here
 
-5. Run the Flask Application
+### 5. Run the Flask Application
 
 python app.py
 
@@ -58,25 +58,25 @@ Visit http://127.0.0.1:5000 in your browser to access the application.
 ## 📦 Docker & Kubernetes Deployment
 
 This project can be deployed inside a containerized environment and orchestrated using Kubernetes with Minikube.
-1. Build and Push the Docker Image
+### 1. Build and Push the Docker Image
 
 docker build -t munevvernure/codebotapp:latest .
 
 docker push munevvernure/codebotapp:latest
 
-2. Start Minikube
+### 2. Start Minikube
 
 minikube start
 
-3. Deploy the Application to Kubernetes
+### 3. Deploy the Application to Kubernetes
 
 kubectl apply -f deployment.yaml
 
-4. Expose the Service
+### 4. Expose the Service
 
 kubectl expose deployment codebotapp --type=NodePort --port=5000
 
-5. Access the Service
+### 5. Access the Service
 
 Retrieve the URL to access the running service:
 
