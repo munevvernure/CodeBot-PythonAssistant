@@ -112,10 +112,10 @@ http://192.168.49.2:30007
 
 ## 📚 Repository Contents
 ### File/Folder	Description
-app.py	Main Flask application (includes HTML rendering)
+app.py --> Main Flask application (includes HTML rendering)
 
-Dockerfile	Docker image configuration
+Dockerfile --> Docker image configuration
 
-deployment.yaml	Kubernetes deployment manifest
+deployment.yaml	--> Kubernetes deployment manifest
 
-requirements.txt	Python package requirements
+requirements.txt --> Python package requirements
