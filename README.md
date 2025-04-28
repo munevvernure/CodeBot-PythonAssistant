@@ -31,6 +31,7 @@ Follow these steps to set up and run the application locally:
 1. Clone the Repository
 
 git clone https://github.com/munevvernure/CodeBot-PythonAssistant.git
+
 cd CodeBot-PythonAssistant
 
 2. Create and Activate a Virtual Environment
