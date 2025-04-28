@@ -61,6 +61,7 @@ This project can be deployed inside a containerized environment and orchestrated
 1. Build and Push the Docker Image
 
 docker build -t munevvernure/codebotapp:latest .
+
 docker push munevvernure/codebotapp:latest
 
 2. Start Minikube
@@ -83,6 +84,22 @@ minikube service codebotapp --url
 
 Open the printed URL in your browser.
 
+## 🌐 Accessing the Application via Minikube
+
+After deploying the application and exposing the service, you can access it using the Node IP and NodePort provided by Minikube.
+
+For example, if your Minikube IP is 192.168.49.2 and the service is exposed on port 30007, you can open the application by visiting:
+
+http://192.168.49.2:30007
+
+    Note: Your Minikube IP and service port may vary depending on your local setup.
+    You can always retrieve them by running:
+
+    minikube ip
+    kubectl get svc
+
+
+
 ## 📝 Important Notes
 
     Authentication: A valid OpenAI API key is required.
@@ -94,7 +111,7 @@ Open the printed URL in your browser.
     Deployment: The app is deployed using a simple Kubernetes Deployment (deployment.yaml).
 
 ## 📚 Repository Contents
-File/Folder	Description
+### File/Folder	Description
 app.py	Main Flask application (includes HTML rendering)
 Dockerfile	Docker image configuration
 deployment.yaml	Kubernetes deployment manifest
