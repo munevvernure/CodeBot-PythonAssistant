@@ -1,8 +1,9 @@
-CodeBot: AI-Powered Python Code Assistant
+##CodeBot: AI-Powered Python Code Assistant
 
 CodeBot is a lightweight Flask-based web application designed to assist users in generating Python code snippets based on natural language prompts.
 It interacts with OpenAI's GPT-3.5 Turbo model to transform user-provided descriptions into functional Python code, accompanied by a meaningful title.
-📖 Project Overview
+
+##📖 Project Overview
 
     Input: A natural language prompt (e.g., "Create a function to calculate Fibonacci numbers")
 
@@ -11,7 +12,8 @@ It interacts with OpenAI's GPT-3.5 Turbo model to transform user-provided descri
     Output: Display the generated Python code along with a descriptive title
 
 The goal is to demonstrate a simple AI-assisted development workflow through a clean API and minimalistic web interface.
-🛠️ Tech Stack
+
+##🛠️ Tech Stack
 
     Backend: Python (Flask)
 
@@ -23,7 +25,7 @@ The goal is to demonstrate a simple AI-assisted development workflow through a c
 
     External API: OpenAI GPT-3.5 Turbo Model
 
-🚀 Local Development Setup
+##🚀 Local Development Setup
 
 Follow these steps to set up and run the application locally:
 1. Clone the Repository
@@ -52,7 +54,7 @@ python app.py
 
 Visit http://127.0.0.1:5000 in your browser to access the application.
 
-📦 Docker & Kubernetes Deployment
+##📦 Docker & Kubernetes Deployment
 
 This project can be deployed inside a containerized environment and orchestrated using Kubernetes with Minikube.
 1. Build and Push the Docker Image
@@ -79,7 +81,8 @@ Retrieve the URL to access the running service:
 minikube service codebotapp --url
 
 Open the printed URL in your browser.
-📝 Important Notes
+
+##📝 Important Notes
 
     Authentication: A valid OpenAI API key is required.
 
@@ -89,17 +92,9 @@ Open the printed URL in your browser.
 
     Deployment: The app is deployed using a simple Kubernetes Deployment (deployment.yaml).
 
-📚 Repository Contents
+##📚 Repository Contents
 File/Folder	Description
 app.py	Main Flask application (includes HTML rendering)
 Dockerfile	Docker image configuration
 deployment.yaml	Kubernetes deployment manifest
 requirements.txt	Python package requirements
-
-✅ Quick Summary
-
-    You can run the app locally with Flask
-
-    You can deploy the app using Docker + Kubernetes
-
-    You can generate Python code from prompts using OpenAI's GPT-3.5 Turbo model
