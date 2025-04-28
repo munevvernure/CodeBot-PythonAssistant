@@ -37,6 +37,7 @@ cd CodeBot-PythonAssistant
 ### 2. Create and Activate a Virtual Environment
 
 python3 -m venv venv
+
 source venv/bin/activate       # For Linux/macOS
 
 ### 3. Install Dependencies
