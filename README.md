@@ -61,7 +61,7 @@ Visit http://127.0.0.1:5000 in your browser to access the application.
 This project can be deployed inside a containerized environment and orchestrated using Kubernetes with Minikube.
 ### 1. Build and Push the Docker Image
 
-docker build -t munevvernure/codebotapp:latest .
+docker build -t munevvernure/codebotapp:latest .  # write your own dockerhub username instead of "munevvernure"
 
 docker push munevvernure/codebotapp:latest
 
